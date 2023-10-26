@@ -40,12 +40,6 @@ namespace IntelAssessmentAPI.Migrations
                     b.Property<string>("Summary3")
                         .HasColumnType("text");
 
-                    b.Property<string>("Summary4")
-                        .HasColumnType("text");
-
-                    b.Property<string>("Summary5")
-                        .HasColumnType("text");
-
                     b.HasKey("Id");
 
                     b.HasIndex("IdProfile");

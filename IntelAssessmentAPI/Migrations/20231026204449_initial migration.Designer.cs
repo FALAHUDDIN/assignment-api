@@ -12,8 +12,8 @@ using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 namespace IntelAssessmentAPI.Migrations
 {
     [DbContext(typeof(AboutAPIDbContext))]
-    [Migration("20231026011722_Initial Migration")]
-    partial class InitialMigration
+    [Migration("20231026204449_initial migration")]
+    partial class initialmigration
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -41,12 +41,6 @@ namespace IntelAssessmentAPI.Migrations
                         .HasColumnType("text");
 
                     b.Property<string>("Summary3")
-                        .HasColumnType("text");
-
-                    b.Property<string>("Summary4")
-                        .HasColumnType("text");
-
-                    b.Property<string>("Summary5")
                         .HasColumnType("text");
 
                     b.HasKey("Id");

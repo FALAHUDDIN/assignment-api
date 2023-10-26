@@ -65,8 +65,6 @@ namespace IntelAssessmentAPI.Controllers
                 Summary1 = addBiographyRequest.Summary1,
                 Summary2 = addBiographyRequest.Summary2,
                 Summary3 = addBiographyRequest.Summary3,
-                Summary4 = addBiographyRequest.Summary4,
-                Summary5 = addBiographyRequest.Summary5,
             };
 
             await dbContext.Biography.AddAsync(newBiography);
@@ -97,16 +95,6 @@ namespace IntelAssessmentAPI.Controllers
             if (updateBiographyRequest.Summary3 != null)
             {
                 biography.Summary3 = updateBiographyRequest.Summary3;
-            }
-
-            if (updateBiographyRequest.Summary4 != null)
-            {
-                biography.Summary4 = updateBiographyRequest.Summary4;
-            }
-
-            if (updateBiographyRequest.Summary5 != null)
-            {
-                biography.Summary5 = updateBiographyRequest.Summary5;
             }
 
             await dbContext.SaveChangesAsync();

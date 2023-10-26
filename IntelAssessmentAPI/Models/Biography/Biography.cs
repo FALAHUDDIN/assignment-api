@@ -15,10 +15,6 @@ namespace IntelAssessmentAPI.Models.Biography
 
         public string? Summary3 { get; set; }
 
-        public string? Summary4 { get; set; }
-
-        public string? Summary5 { get; set; }
-
         public virtual Profile.Profile? Profile { get; set; }
     }
 }

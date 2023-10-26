@@ -6,7 +6,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 namespace IntelAssessmentAPI.Migrations
 {
     /// <inheritdoc />
-    public partial class InitialMigration : Migration
+    public partial class initialmigration : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
@@ -35,9 +35,7 @@ namespace IntelAssessmentAPI.Migrations
                     IdProfile = table.Column<Guid>(type: "uuid", nullable: false),
                     Summary1 = table.Column<string>(type: "text", nullable: true),
                     Summary2 = table.Column<string>(type: "text", nullable: true),
-                    Summary3 = table.Column<string>(type: "text", nullable: true),
-                    Summary4 = table.Column<string>(type: "text", nullable: true),
-                    Summary5 = table.Column<string>(type: "text", nullable: true)
+                    Summary3 = table.Column<string>(type: "text", nullable: true)
                 },
                 constraints: table =>
                 {
