@@ -154,6 +154,16 @@ namespace IntelAssessmentAPI.Controllers
                 detail.FreeTimeActivity = updateDetailRequest.FreeTimeActivity;
             }
 
+            if (updateDetailRequest.Interest != null)
+            {
+                detail.Interest = updateDetailRequest.Interest;
+            }
+
+            if (updateDetailRequest.FavouriteFood != null)
+            {
+                detail.FavouriteFood = updateDetailRequest.FavouriteFood;
+            }
+
             if (updateDetailRequest.Weight != null)
             {
                 detail.Weight = updateDetailRequest.Weight;
